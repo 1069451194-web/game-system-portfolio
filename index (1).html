@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="系统设计作品">
+  <title>系统设计作品</title>
+  <style>
+    :root{
+      --bg:#101624;
+      --panel:#161d2d;
+      --text:#f4f6fa;
+      --muted:#adb5c5;
+      --line:rgba(255,255,255,.09);
+      --accent:#7860d8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      color:var(--text);
+      background:var(--bg);
+      font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    }
+    .shell{
+      width:min(920px,calc(100% - 32px));
+      margin:auto;
+      padding:44px 0 72px;
+    }
+    .back{
+      display:inline-block;
+      margin-bottom:28px;
+      color:var(--muted);
+      font-size:13px;
+      text-decoration:none;
+    }
+    h1{
+      margin:0;
+      font-size:28px;
+    }
+    .subtitle{
+      margin:6px 0 30px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .empty{
+      min-height:220px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:28px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:var(--panel);
+    }
+    .empty strong{
+      display:block;
+      margin-bottom:6px;
+      font-size:17px;
+    }
+    .empty span{
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <a class="back" href="../">← 返回作品集首页</a>
+    <h1>系统设计作品</h1>
+    <p class="subtitle">所有展示内容均为脱敏版本。</p>
+
+    <section class="empty">
+      <div>
+        <strong>作品整理中</strong>
+        <span>后续可在此处添加PDF、图片、视频或在线预览链接。</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
