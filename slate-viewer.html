@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <meta name="description" content="石板系统设计原图查看页">
+  <title>石板系统设计 · 原图</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      min-height:100%;
+      background:#0b101b;
+      color:#fff;
+      font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    }
+    .bar{
+      position:sticky;
+      top:0;
+      z-index:10;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:10px 14px;
+      border-bottom:1px solid rgba(255,255,255,.12);
+      background:rgba(11,16,27,.96);
+    }
+    .bar strong{font-size:14px}
+    .bar a{
+      color:#cfc5ff;
+      text-decoration:none;
+      font-size:13px;
+    }
+    .hint{
+      margin:0;
+      padding:10px 14px;
+      color:#aeb7c8;
+      font-size:12px;
+      line-height:1.6;
+      background:#111827;
+    }
+    .viewer{
+      overflow:auto;
+      -webkit-overflow-scrolling:touch;
+      background:#e5e7eb;
+    }
+    .viewer img{
+      display:block;
+      width:2048px;
+      max-width:none;
+      height:auto;
+      margin:0;
+      background:#fff;
+    }
+    @media (max-width:700px){
+      .viewer img{
+        width:2048px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="bar">
+    <strong>石板系统设计 · 2048×1488 原图</strong>
+    <a href="index.html#system-design">返回作品集</a>
+  </header>
+  <p class="hint">这是你上传的原始PNG文件。手机可双指缩放，也可横向、纵向拖动查看细节。</p>
+  <main class="viewer">
+    <img src="slate-system-original.png"
+         width="2048"
+         height="1488"
+         alt="石板系统设计原始PNG">
+  </main>
+</body>
+</html>
